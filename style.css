@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+*{
+    font-family: 'Bree Serif', serif;
+    text-transform: uppercase;
+}
 body {
-    background: gray;
+    background: rgb(146, 121, 246);
     width: 100%;
     display: flex;
     height: 100vh;
@@ -34,7 +39,7 @@ body {
 .score-circle {
     height: 20px;
     width: 20px;
-    background-color: gray;
+ 
     border-radius: 50%;
     border: black solid;
     display: inline-block;
@@ -46,9 +51,10 @@ body {
     border: 2.5px solid white;
     display: flex;
     flex-direction: column;
+    background-color: white;
 }
 .team-name {
-    background-color: white;
+    background-color: rgb(146, 121, 246);
     padding: 10px;
     text-align: center;
 }
@@ -67,9 +73,13 @@ body {
 }
 #result {
     margin-top: 50px;
-    background: crimson;
+    background: rgb(231, 38, 126);
     text-transform: uppercase;
     font-size: xx-large;
     font-weight: bolder;
-    background-clip: text;    
+    background-clip: text;   
+    width: 300px;
+    align-self: center; 
+    border: none;
+    border-radius: 10px;
 }
