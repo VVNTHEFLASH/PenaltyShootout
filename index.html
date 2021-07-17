@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penalty Shoot Game</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <!-- Team1 England-->
+                <div class="team">
+                    <img src="england.png" alt="logo" width="150px" height="150px">
+                        <div class="team-name">
+                            <span class="name" id="team-1-name"></span>
+                        </div>
+                    <div class="row" id="team-1-round-goals">
+                        <span class="score-circle col"></span>
+                        <span class="score-circle col"></span>
+                        <span class="score-circle col"></span>
+                        <span class="score-circle col"></span>
+                        <span class="score-circle col"></span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <!-- Score -->
+                <span id="team-1-score"></span>
+                <span >-</span>
+                <span id="team-2-score"></span>
+            </div>
+                <!-- Team2 Italy-->
+            <div class="col">
+                <div class="team">
+                    <img src="italy-2.jfif" alt="logo" width="150px" height="150px">
+                        <div class="team-name">
+                            <span class="name" id="team-2-name"></span>
+                        </div>
+                    <div class="row" id="team-2-round-goals">
+                        <span class="score-circle col"></span>
+                        <span class="score-circle col"></span>
+                        <span class="score-circle col"></span>
+                        <span class="score-circle col"></span>
+                        <span class="score-circle col"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <!-- button -->
+            <div class="col">
+                <button id="shoot-button" onclick="buttonClick()"></button>
+            </div>
+            <!-- Result -->
+            <div class="col" id="result" hidden></div>
+        
+    </div>
+    <script src="app.js"></script>
+</body>    
+</html>
