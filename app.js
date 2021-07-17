@@ -30,6 +30,7 @@ let selectTurn = () => {
 let updateButtonText = () => {
     var button = document.getElementById("shoot-button");
         var result = document.getElementById("result");
+        result.style.visibility="hidden"
     //To check if the game is over or not
     if(team1.goals.length == 5 && team2.goals.length == 5) {
         button.remove();
@@ -37,8 +38,7 @@ let updateButtonText = () => {
         result.style.visibility="";
         result.textContent = team1.score === team2.score ? `Match Draw`: `${team1.score>team2.score ? team1.name: team2.name} Wins`
     }
-    else {
-    
+    else {    
         button.textContent=`${turn === 1 ? team1.name: team2.name} Shooting`;
     }    
 }
@@ -57,9 +57,10 @@ var ButtonClick = () => {
         team2.goals.push(goals);
         team2.score = calculateScore(team2.goals);
     }
+	changeTurn();
     updateButtonText();
     updateGoals();
-    changeTurn();
+    
 }
 
 var calculateScore = (goals) => {
@@ -80,5 +81,5 @@ var updateGoals = () => {
       });
 }
 var changeTurn = () => {
-    turn = turn === 1 ? 2 : 1;
+    turn = turn === 1 ? 2 : 1 ;
   }

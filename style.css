@@ -2,6 +2,7 @@
 *{
     font-family: 'Bree Serif', serif;
     text-transform: uppercase;
+    color: white;
 }
 body {
     background: rgb(146, 121, 246);
@@ -39,7 +40,7 @@ body {
 .score-circle {
     height: 20px;
     width: 20px;
- 
+    background-color: gray;
     border-radius: 50%;
     border: black solid;
     display: inline-block;
